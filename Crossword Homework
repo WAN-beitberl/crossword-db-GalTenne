@@ -1,0 +1,17 @@
+1. The kind of information I think will be stored in a table is:
+- The "Across" and "Down" lists, with the same key- the cube number holding the location of the first letter of each word.
+NOTE: this table will contain only the clue words for each word and NOT THE SOLUTION.
+- The information that each cube needs to contain so the solution will be right.
+This table can be built, for example, from a column of "cube index" as key, and a column of "letter"
+-the Information of which cubes are black and cant have letters in them.
+
+2. the kind of information I think won't be stored in a table is:
+- The length of each word. it is an unneccesarry information in this specific case,
+since the puzzle has only one solution, and each cube contains only one character. holding the length of the word will not help checking or assuring anything,
+because you won't be able to solve the puzzle currectly using too long/short words.
+- The score of the player. It is only one field of information and can be stored in a variable
+and doesn't have any connection to the information that is inside the tables.
+- The puzzle number. like the "score" described above, it has nothing to do with the information inside the tables.
+these two variables can be used TO FIND AND MANIPULATE information from the tables- but won't be needed to be inside of them.
+
+3. file added
